@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */; };
+		B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95C219DB789009F2BD0 /* GradientView.swift */; };
+		B364A963219DC500009F2BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
 		B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */; };
 		B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */; };
-		B3BAEED5216F4E6600B7A4D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
 		B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEED6216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld */; };
 		B3BAEEDA216F4E6800B7A4D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED9216F4E6800B7A4D7 /* Assets.xcassets */; };
 		B3BAEEDD216F4E6800B7A4D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEEDB216F4E6800B7A4D7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
+		B364A95C219DB789009F2BD0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B3BAEECC216F4E6600B7A4D7 /* Anastasiya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anastasiya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B364A960219DBF86009F2BD0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B364A95C219DB789009F2BD0 /* GradientView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B3BAEEC3216F4E6600B7A4D7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */,
-				B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */,
 				B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */,
+				B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */,
+				B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */,
+				B364A960219DBF86009F2BD0 /* Extensions */,
 				B3BAEED9216F4E6800B7A4D7 /* Assets.xcassets */,
 				B3BAEEDB216F4E6800B7A4D7 /* LaunchScreen.storyboard */,
 				B3BAEEDE216F4E6800B7A4D7 /* Info.plist */,
@@ -126,8 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3BAEEDD216F4E6800B7A4D7 /* LaunchScreen.storyboard in Resources */,
+				B364A963219DC500009F2BD0 /* Main.storyboard in Resources */,
 				B3BAEEDA216F4E6800B7A4D7 /* Assets.xcassets in Resources */,
-				B3BAEED5216F4E6600B7A4D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */,
 				B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */,
+				B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */,
 				B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */,
 				B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */,
 			);

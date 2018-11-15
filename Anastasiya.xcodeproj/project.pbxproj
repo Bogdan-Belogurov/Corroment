@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */; };
 		B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95C219DB789009F2BD0 /* GradientView.swift */; };
-		B364A963219DC500009F2BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
+		B364A964219DD4A5009F2BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
+		B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A965219DEE2A009F2BD0 /* DesignableButton.swift */; };
 		B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */; };
 		B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */; };
 		B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEED6216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
 		B364A95C219DB789009F2BD0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B364A965219DEE2A009F2BD0 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		B3BAEECC216F4E6600B7A4D7 /* Anastasiya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anastasiya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				B364A95C219DB789009F2BD0 /* GradientView.swift */,
+				B364A965219DEE2A009F2BD0 /* DesignableButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,8 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B364A964219DD4A5009F2BD0 /* Main.storyboard in Resources */,
 				B3BAEEDD216F4E6800B7A4D7 /* LaunchScreen.storyboard in Resources */,
-				B364A963219DC500009F2BD0 /* Main.storyboard in Resources */,
 				B3BAEEDA216F4E6800B7A4D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +160,7 @@
 				B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */,
 				B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */,
 				B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */,
+				B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

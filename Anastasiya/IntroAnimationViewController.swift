@@ -17,13 +17,10 @@ class IntroAnimationViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        continueButton.layer.cornerRadius = 12
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.textLabel.alpha = 0
-        self.continueButton.alpha = 0
     }
     
     override func viewDidAppear(_ animated: Bool) {

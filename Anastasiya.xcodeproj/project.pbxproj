@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33BF23721CE7C890084414B /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF22D21CE7C880084414B /* UIViewAnchorPoint.swift */; };
+		B33BF23821CE7C890084414B /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF22E21CE7C880084414B /* UIViewX.swift */; };
+		B33BF23921CE7C890084414B /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF22F21CE7C880084414B /* UIButtonX.swift */; };
+		B33BF23A21CE7C890084414B /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23021CE7C880084414B /* UITextFieldX.swift */; };
+		B33BF23B21CE7C890084414B /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23121CE7C880084414B /* UIViewControllerX.swift */; };
+		B33BF23C21CE7C890084414B /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23221CE7C880084414B /* UIImageViewX.swift */; };
+		B33BF23D21CE7C890084414B /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23321CE7C880084414B /* UIVisualEffectViewX.swift */; };
+		B33BF23E21CE7C890084414B /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23421CE7C880084414B /* UILabelX.swift */; };
+		B33BF23F21CE7C890084414B /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23521CE7C880084414B /* UISliderX.swift */; };
+		B33BF24021CE7C890084414B /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23621CE7C890084414B /* UIViewXRadialGradient.swift */; };
 		B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */; };
 		B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95C219DB789009F2BD0 /* GradientView.swift */; };
 		B364A964219DD4A5009F2BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
 		B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A965219DEE2A009F2BD0 /* DesignableButton.swift */; };
+		B38A440E21A2D53500DC146C /* ParametersProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38A440D21A2D53500DC146C /* ParametersProfile.swift */; };
+		B393827721CEC16A0022CA9A /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393827621CEC16A0022CA9A /* GraphsViewController.swift */; };
 		B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */; };
 		B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */; };
 		B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEED6216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld */; };
@@ -19,9 +31,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B33BF22D21CE7C880084414B /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		B33BF22E21CE7C880084414B /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		B33BF22F21CE7C880084414B /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		B33BF23021CE7C880084414B /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		B33BF23121CE7C880084414B /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		B33BF23221CE7C880084414B /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		B33BF23321CE7C880084414B /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		B33BF23421CE7C880084414B /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		B33BF23521CE7C880084414B /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		B33BF23621CE7C890084414B /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
 		B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
 		B364A95C219DB789009F2BD0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B364A965219DEE2A009F2BD0 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		B38A440D21A2D53500DC146C /* ParametersProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersProfile.swift; sourceTree = "<group>"; };
+		B393827621CEC16A0022CA9A /* GraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 		B3BAEECC216F4E6600B7A4D7 /* Anastasiya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anastasiya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B33BF22A21CE7C2C0084414B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		B33BF24121CE7CA80084414B /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				B33BF22F21CE7C880084414B /* UIButtonX.swift */,
+				B33BF23221CE7C880084414B /* UIImageViewX.swift */,
+				B33BF23421CE7C880084414B /* UILabelX.swift */,
+				B33BF23521CE7C880084414B /* UISliderX.swift */,
+				B33BF23021CE7C880084414B /* UITextFieldX.swift */,
+				B33BF22D21CE7C880084414B /* UIViewAnchorPoint.swift */,
+				B33BF23121CE7C880084414B /* UIViewControllerX.swift */,
+				B33BF22E21CE7C880084414B /* UIViewX.swift */,
+				B33BF23621CE7C890084414B /* UIViewXRadialGradient.swift */,
+				B33BF23321CE7C880084414B /* UIVisualEffectViewX.swift */,
+			);
+			path = Designable;
+			sourceTree = "<group>";
+		};
 		B364A960219DBF86009F2BD0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +101,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B38A440F21A2D53B00DC146C /* CardParameters */ = {
+			isa = PBXGroup;
+			children = (
+				B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */,
+			);
+			path = CardParameters;
+			sourceTree = "<group>";
+		};
+		B393827821CEC3B90022CA9A /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				B393827621CEC16A0022CA9A /* GraphsViewController.swift */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
 		B3BAEEC3216F4E6600B7A4D7 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +124,7 @@
 				B3BAEECD216F4E6600B7A4D7 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		B3BAEECD216F4E6600B7A4D7 /* Products */ = {
 			isa = PBXGroup;
@@ -72,11 +138,14 @@
 			isa = PBXGroup;
 			children = (
 				B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */,
-				B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */,
-				B3BAEED1216F4E6600B7A4D7 /* ViewController.swift */,
-				B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */,
+				B38A440D21A2D53500DC146C /* ParametersProfile.swift */,
+				B33BF24121CE7CA80084414B /* Designable */,
 				B364A960219DBF86009F2BD0 /* Extensions */,
+				B33BF22A21CE7C2C0084414B /* Animation */,
+				B38A440F21A2D53B00DC146C /* CardParameters */,
+				B393827821CEC3B90022CA9A /* Graphs */,
 				B3BAEED9216F4E6800B7A4D7 /* Assets.xcassets */,
+				B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */,
 				B3BAEEDB216F4E6800B7A4D7 /* LaunchScreen.storyboard */,
 				B3BAEEDE216F4E6800B7A4D7 /* Info.plist */,
 				B3BAEED6216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld */,
@@ -124,7 +193,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = B3BAEEC3216F4E6600B7A4D7;
@@ -155,12 +223,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33BF24021CE7C890084414B /* UIViewXRadialGradient.swift in Sources */,
+				B33BF23721CE7C890084414B /* UIViewAnchorPoint.swift in Sources */,
 				B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */,
 				B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */,
+				B33BF23F21CE7C890084414B /* UISliderX.swift in Sources */,
+				B33BF23B21CE7C890084414B /* UIViewControllerX.swift in Sources */,
+				B33BF23C21CE7C890084414B /* UIImageViewX.swift in Sources */,
+				B393827721CEC16A0022CA9A /* GraphsViewController.swift in Sources */,
 				B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */,
 				B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */,
+				B38A440E21A2D53500DC146C /* ParametersProfile.swift in Sources */,
+				B33BF23D21CE7C890084414B /* UIVisualEffectViewX.swift in Sources */,
+				B33BF23921CE7C890084414B /* UIButtonX.swift in Sources */,
 				B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */,
+				B33BF23A21CE7C890084414B /* UITextFieldX.swift in Sources */,
+				B33BF23E21CE7C890084414B /* UILabelX.swift in Sources */,
 				B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */,
+				B33BF23821CE7C890084414B /* UIViewX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

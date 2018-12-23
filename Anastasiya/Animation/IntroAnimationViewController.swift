@@ -43,32 +43,4 @@ class IntroAnimationViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
-
-    /*
-     import UIKit
-     
-     class IntroViewController: UIViewController {
-     
-     
-     override func viewDidAppear(_ animated: Bool) {
-     super.viewDidAppear(true)
-     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-     UIView.animate(withDuration: 1, animations: {
-     self.introViewYAnchor.constant = -150
-     self.view.layoutIfNeeded()
-     })
-     UIView.animate(withDuration: 1, delay: 0.5, animations: {
-     self.textView.alpha = 1
-     self.continueButtonOutlet.alpha = 1
-     })
-     }
-     }
-     
-     @IBAction func continueButtonTap(_ sender: Any) {
-     }
-     
-     }
-    */
-
 }

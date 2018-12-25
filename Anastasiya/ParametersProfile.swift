@@ -12,10 +12,7 @@ class ParametersProfile {
     var sigmaOne: Double
     var sigmaTwo: Double
     var taoOne: Double
-    var taoTwo: Double
-    var sigmaCritOne: Double?
-    var sigmaCritTwo: Double?
-    
+    var taoTwo: Double    
     
     
     init(sigmaOne: Double, sigmaTwo: Double, taoOne: Double, taoTwo: Double) {
@@ -23,7 +20,5 @@ class ParametersProfile {
         self.sigmaTwo = sigmaTwo
         self.taoOne = taoOne
         self.taoTwo = taoTwo
-        self.sigmaCritOne = ((sigmaTwo * taoTwo) - (sigmaOne * taoOne)) / (taoTwo - taoOne)
-        //self.sigmaCritTwo = 
     }
 }

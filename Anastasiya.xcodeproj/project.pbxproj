@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02520EE64CA00606B11A11BD /* Pods_Anastasiya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5C840F0678C8CE5AC7F0CA /* Pods_Anastasiya.framework */; };
 		B33BF23721CE7C890084414B /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF22D21CE7C880084414B /* UIViewAnchorPoint.swift */; };
 		B33BF23821CE7C890084414B /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF22E21CE7C880084414B /* UIViewX.swift */; };
 		B33BF23921CE7C890084414B /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF22F21CE7C880084414B /* UIButtonX.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C140C919B8C6BACD4F88E98 /* Pods-Anastasiya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anastasiya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anastasiya/Pods-Anastasiya.debug.xcconfig"; sourceTree = "<group>"; };
+		4A5C840F0678C8CE5AC7F0CA /* Pods_Anastasiya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anastasiya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33BF22D21CE7C880084414B /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
 		B33BF22E21CE7C880084414B /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		B33BF22F21CE7C880084414B /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		B3BAEED9216F4E6800B7A4D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3BAEEDC216F4E6800B7A4D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3BAEEDE216F4E6800B7A4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C10ECE63C987BE86A94F9922 /* Pods-Anastasiya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anastasiya.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anastasiya/Pods-Anastasiya.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +65,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02520EE64CA00606B11A11BD /* Pods_Anastasiya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E63B6C5D9C1F67D2A350824 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C140C919B8C6BACD4F88E98 /* Pods-Anastasiya.debug.xcconfig */,
+				C10ECE63C987BE86A94F9922 /* Pods-Anastasiya.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88B01CB612CAA19292A2EE6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A5C840F0678C8CE5AC7F0CA /* Pods_Anastasiya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B33BF22A21CE7C2C0084414B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +144,8 @@
 			children = (
 				B3BAEECE216F4E6600B7A4D7 /* Anastasiya */,
 				B3BAEECD216F4E6600B7A4D7 /* Products */,
+				7E63B6C5D9C1F67D2A350824 /* Pods */,
+				88B01CB612CAA19292A2EE6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -160,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3BAEEE1216F4E6800B7A4D7 /* Build configuration list for PBXNativeTarget "Anastasiya" */;
 			buildPhases = (
+				7D2A39F98861F23C5789AA44 /* [CP] Check Pods Manifest.lock */,
 				B3BAEEC8216F4E6600B7A4D7 /* Sources */,
 				B3BAEEC9216F4E6600B7A4D7 /* Frameworks */,
 				B3BAEECA216F4E6600B7A4D7 /* Resources */,
+				80243255BB27283AB3B07220 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +243,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D2A39F98861F23C5789AA44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anastasiya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80243255BB27283AB3B07220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Anastasiya/Pods-Anastasiya-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anastasiya/Pods-Anastasiya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3BAEEC8216F4E6600B7A4D7 /* Sources */ = {
@@ -384,6 +449,7 @@
 		};
 		B3BAEEE2216F4E6800B7A4D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C140C919B8C6BACD4F88E98 /* Pods-Anastasiya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +468,7 @@
 		};
 		B3BAEEE3216F4E6800B7A4D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10ECE63C987BE86A94F9922 /* Pods-Anastasiya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

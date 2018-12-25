@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ymm-q3-hy7">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Anastasiya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIViewX" customModule="Anastasiya" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khp-ou-3SE" customClass="UIViewX" customModule="Anastasiya" customModuleProvider="target">
-                                <rect key="frame" x="16" y="80" width="343" height="336"/>
+                                <rect key="frame" x="16" y="80" width="382" height="336"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-9h-3qQ">
-                                        <rect key="frame" x="88" y="16" width="239" height="45"/>
+                                        <rect key="frame" x="88" y="16" width="278" height="45"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9TN-NS-vP3">
-                                        <rect key="frame" x="88" y="77" width="239" height="45"/>
+                                        <rect key="frame" x="88" y="77" width="278" height="45"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -49,7 +49,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0O2-7r-Q45">
-                                        <rect key="frame" x="88" y="138" width="239" height="45"/>
+                                        <rect key="frame" x="88" y="138" width="278" height="45"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -63,7 +63,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3lF-5R-XLW">
-                                        <rect key="frame" x="88" y="199" width="239" height="45"/>
+                                        <rect key="frame" x="88" y="199" width="278" height="45"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -77,7 +77,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-AI-GQK" customClass="UIButtonX" customModule="Anastasiya" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="260" width="311" height="60"/>
+                                        <rect key="frame" x="16" y="260" width="350" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="XaH-np-VMv"/>
@@ -336,10 +336,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                <color key="value" red="0.2470588235" green="0.47058823529999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
-                                <color key="value" red="0.9569519353" green="0.37701806729999998" blue="0.4670038943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                 <real key="value" value="0.0"/>
@@ -353,7 +353,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="28t-Qi-A8x"/>
                             <barButtonItem title="Theory" id="8Vi-zF-PpS">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -376,33 +376,67 @@
         <scene sceneID="Gs0-be-rgd">
             <objects>
                 <viewController title="Result" id="HSy-qQ-F73" customClass="GraphsViewController" customModule="Anastasiya" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZXs-9d-Gi2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                    <view key="view" contentMode="scaleToFill" id="ZXs-9d-Gi2" customClass="UIViewX" customModule="Anastasiya" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-ik-3Un">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="956"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1156"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG6-MP-v3q">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSa-or-ALt">
-                                                <rect key="frame" x="29" y="136" width="317" height="354"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSa-or-ALt" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="16" y="74" width="343" height="343"/>
                                                 <color key="backgroundColor" red="1" green="0.32854464979999998" blue="0.33973557230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XSa-or-ALt" secondAttribute="height" multiplier="1:1" id="Ggv-s7-JK6"/>
+                                                </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-5R-2nE">
-                                                <rect key="frame" x="29" y="514" width="317" height="319"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First chart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBs-vm-Jsh">
+                                                <rect key="frame" x="16" y="16" width="343" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second chart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXY-eX-fmg">
+                                                <rect key="frame" x="16" y="433" width="343" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-5R-2nE" customClass="LineChartView" customModule="Charts">
+                                                <rect key="frame" x="16" y="491" width="343" height="343"/>
                                                 <color key="backgroundColor" red="1" green="0.32854464979999998" blue="0.33973557230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2Kl-5R-2nE" secondAttribute="height" multiplier="1:1" id="EY4-O5-xLc"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="dGl-9B-Ove"/>
+                                            <constraint firstItem="XSa-or-ALt" firstAttribute="leading" secondItem="hG6-MP-v3q" secondAttribute="leading" constant="16" id="09r-ft-ZGb"/>
+                                            <constraint firstAttribute="trailing" secondItem="XSa-or-ALt" secondAttribute="trailing" constant="16" id="9iE-Oi-e8T"/>
+                                            <constraint firstItem="XSa-or-ALt" firstAttribute="top" secondItem="PBs-vm-Jsh" secondAttribute="bottom" constant="16" id="CcH-q8-7Fg"/>
+                                            <constraint firstAttribute="trailing" secondItem="PBs-vm-Jsh" secondAttribute="trailing" constant="16" id="Mqh-K0-bQc"/>
+                                            <constraint firstItem="EXY-eX-fmg" firstAttribute="top" secondItem="XSa-or-ALt" secondAttribute="bottom" constant="16" id="Pzw-qa-NtD"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Kl-5R-2nE" secondAttribute="trailing" constant="16" id="T06-mC-ZEV"/>
+                                            <constraint firstItem="PBs-vm-Jsh" firstAttribute="top" secondItem="hG6-MP-v3q" secondAttribute="top" constant="16" id="VwA-kQ-60p"/>
+                                            <constraint firstItem="EXY-eX-fmg" firstAttribute="leading" secondItem="hG6-MP-v3q" secondAttribute="leading" constant="16" id="aTa-On-KVI"/>
+                                            <constraint firstAttribute="height" constant="1200" id="dGl-9B-Ove"/>
+                                            <constraint firstItem="PBs-vm-Jsh" firstAttribute="leading" secondItem="hG6-MP-v3q" secondAttribute="leading" constant="16" id="gcc-L7-dwS"/>
+                                            <constraint firstItem="2Kl-5R-2nE" firstAttribute="top" secondItem="EXY-eX-fmg" secondAttribute="bottom" constant="16" id="jcG-MZ-Xra"/>
+                                            <constraint firstItem="2Kl-5R-2nE" firstAttribute="leading" secondItem="hG6-MP-v3q" secondAttribute="leading" constant="16" id="rLo-HI-D55"/>
+                                            <constraint firstAttribute="trailing" secondItem="EXY-eX-fmg" secondAttribute="trailing" constant="16" id="vtA-qh-pgJ"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hG6-MP-v3q" secondAttribute="trailing" id="DOd-zk-1g5"/>
                                     <constraint firstItem="hG6-MP-v3q" firstAttribute="leading" secondItem="Tch-ik-3Un" secondAttribute="leading" id="Isi-2Y-6Cf"/>
@@ -420,37 +454,50 @@
                             <constraint firstItem="Tch-ik-3Un" firstAttribute="top" secondItem="ZXs-9d-Gi2" secondAttribute="top" id="yKU-Dr-E16"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eOk-JI-OWY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="firstLineChart" destination="XSa-or-ALt" id="TWI-55-NUj"/>
+                        <outlet property="secondLineChart" destination="2Kl-5R-2nE" id="NAW-zm-vfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwn-IA-XJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3440.8000000000002" y="201.49925037481262"/>
+            <point key="canvasLocation" x="3405.5999999999999" y="-145.72713643178412"/>
         </scene>
         <!--Intro Animation View Controller-->
         <scene sceneID="lSP-3q-YHM">
             <objects>
                 <viewController storyboardIdentifier="introAnimationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6IX-KF-CjT" customClass="IntroAnimationViewController" customModule="Anastasiya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ue-mE-oNT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-Z9-4qy">
-                                <rect key="frame" x="20" y="284.5" width="335" height="81.5"/>
+                                <rect key="frame" x="20" y="371.66666666666669" width="374" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данное приложение поможет вам провести информационный мониторинг нефтяных трубопроводов." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zW-dF-WGI">
-                                <rect key="frame" x="20" y="286" width="335" height="95.5"/>
+                                <rect key="frame" x="20" y="332.33333333333331" width="374" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-eK-fZv" customClass="DesignableButton" customModule="Anastasiya" customModuleProvider="target">
-                                <rect key="frame" x="20" y="421.5" width="335" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-eK-fZv" customClass="DesignableButton" customModule="Anastasiya" customModuleProvider="target">
+                                <rect key="frame" x="20" y="444" width="374" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2GX-58-s0r"/>
@@ -506,8 +553,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ymm-q3-hy7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TqY-3n-p1t">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="TqY-3n-p1t">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -90,10 +90,10 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        sigmaOneTextField.text = nil
-        sigmaTwoTextField.text = nil
-        taoOneTextField.text = nil
-        taoTwoTextField.text = nil
+//        sigmaOneTextField.text = nil
+//        sigmaTwoTextField.text = nil
+//        taoOneTextField.text = nil
+//        taoTwoTextField.text = nil
         self.checkCardInput()
         let userDefaults = UserDefaults.standard
         let wasIntroWatched = userDefaults.bool(forKey: "wasIntroWatched")

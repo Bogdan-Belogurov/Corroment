@@ -9,6 +9,9 @@
 import Foundation
 
 class ParametersProfile {
+    var name: String?
+    var date: Date?
+    
     var sigmaOne: Double
     var sigmaTwo: Double
     var taoOne: Double

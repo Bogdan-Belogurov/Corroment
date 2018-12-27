@@ -115,6 +115,7 @@ class ViewController: UIViewController {
             guard let dvc = segue.destination as? GraphsViewController else { return }
             guard let parametersToGraphs = cardToCalculate else {return}
             dvc.parameters = parametersToGraphs
+            dvc.saveIsHiden = false
         }
     }
     

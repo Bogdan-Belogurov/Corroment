@@ -22,6 +22,19 @@
 		B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95C219DB789009F2BD0 /* GradientView.swift */; };
 		B364A964219DD4A5009F2BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
 		B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A965219DEE2A009F2BD0 /* DesignableButton.swift */; };
+		B380405421D3836F002CEA52 /* ParametersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380405321D3836F002CEA52 /* ParametersExtension.swift */; };
+		B380405621D383F1002CEA52 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380405521D383F1002CEA52 /* CoreDataStack.swift */; };
+		B380405E21D389D5002CEA52 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380405D21D389D5002CEA52 /* CoreDataService.swift */; };
+		B380406021D38A17002CEA52 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380405F21D38A17002CEA52 /* CoreAssembly.swift */; };
+		B380406221D38AD9002CEA52 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380406121D38AD9002CEA52 /* RootAssembly.swift */; };
+		B380406421D38BC2002CEA52 /* ParametersStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380406321D38BC2002CEA52 /* ParametersStorageManager.swift */; };
+		B380406621D39086002CEA52 /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380406521D39086002CEA52 /* ServicesAssembly.swift */; };
+		B380406921D39EAD002CEA52 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380406821D39EAD002CEA52 /* PresentationAssembly.swift */; };
+		B380406B21D39F31002CEA52 /* ParametersStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380406A21D39F31002CEA52 /* ParametersStorageModel.swift */; };
+		B380407721D411E4002CEA52 /* SaveParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380407621D411E4002CEA52 /* SaveParametersViewController.swift */; };
+		B380407921D412CC002CEA52 /* ParametersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380407821D412CC002CEA52 /* ParametersTableViewCell.swift */; };
+		B380407B21D4164C002CEA52 /* SavedParametersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380407A21D4164C002CEA52 /* SavedParametersDataManager.swift */; };
+		B380407D21D417AF002CEA52 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B380407C21D417AF002CEA52 /* CoreDataModel.swift */; };
 		B38A440E21A2D53500DC146C /* ParametersProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38A440D21A2D53500DC146C /* ParametersProfile.swift */; };
 		B393827721CEC16A0022CA9A /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393827621CEC16A0022CA9A /* GraphsViewController.swift */; };
 		B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */; };
@@ -47,6 +60,21 @@
 		B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
 		B364A95C219DB789009F2BD0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B364A965219DEE2A009F2BD0 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		B380405321D3836F002CEA52 /* ParametersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersExtension.swift; sourceTree = "<group>"; };
+		B380405521D383F1002CEA52 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B380405D21D389D5002CEA52 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		B380405F21D38A17002CEA52 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		B380406121D38AD9002CEA52 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		B380406321D38BC2002CEA52 /* ParametersStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersStorageManager.swift; sourceTree = "<group>"; };
+		B380406521D39086002CEA52 /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		B380406821D39EAD002CEA52 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
+		B380406A21D39F31002CEA52 /* ParametersStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersStorageModel.swift; sourceTree = "<group>"; };
+		B380407021D3AE3F002CEA52 /* SavedParametersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedParametersCollectionViewController.swift; sourceTree = "<group>"; };
+		B380407221D3AFBC002CEA52 /* ParametersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersCollectionViewCell.swift; sourceTree = "<group>"; };
+		B380407621D411E4002CEA52 /* SaveParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveParametersViewController.swift; sourceTree = "<group>"; };
+		B380407821D412CC002CEA52 /* ParametersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersTableViewCell.swift; sourceTree = "<group>"; };
+		B380407A21D4164C002CEA52 /* SavedParametersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedParametersDataManager.swift; sourceTree = "<group>"; };
+		B380407C21D417AF002CEA52 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		B38A440D21A2D53500DC146C /* ParametersProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersProfile.swift; sourceTree = "<group>"; };
 		B393827621CEC16A0022CA9A /* GraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 		B3BAEECC216F4E6600B7A4D7 /* Anastasiya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anastasiya.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +151,78 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B380405921D38439002CEA52 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B380405F21D38A17002CEA52 /* CoreAssembly.swift */,
+				B380405521D383F1002CEA52 /* CoreDataStack.swift */,
+				B380405C21D3898D002CEA52 /* Extension */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B380405A21D3889E002CEA52 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B380405921D38439002CEA52 /* CoreData */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		B380405B21D388C0002CEA52 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B380406521D39086002CEA52 /* ServicesAssembly.swift */,
+				B380406321D38BC2002CEA52 /* ParametersStorageManager.swift */,
+				B380405D21D389D5002CEA52 /* CoreDataService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		B380405C21D3898D002CEA52 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B380405321D3836F002CEA52 /* ParametersExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B380406721D39E8C002CEA52 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B380406821D39EAD002CEA52 /* PresentationAssembly.swift */,
+				B33BF24121CE7CA80084414B /* Designable */,
+				B364A960219DBF86009F2BD0 /* Extensions */,
+				B33BF22A21CE7C2C0084414B /* Animation */,
+				B38A440F21A2D53B00DC146C /* CardParameters */,
+				B393827821CEC3B90022CA9A /* Graphs */,
+				B380406E21D3ADE7002CEA52 /* SavedParameters */,
+				B380406F21D3AE11002CEA52 /* Models */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		B380406E21D3ADE7002CEA52 /* SavedParameters */ = {
+			isa = PBXGroup;
+			children = (
+				B380407021D3AE3F002CEA52 /* SavedParametersCollectionViewController.swift */,
+				B380407221D3AFBC002CEA52 /* ParametersCollectionViewCell.swift */,
+				B380407621D411E4002CEA52 /* SaveParametersViewController.swift */,
+				B380407821D412CC002CEA52 /* ParametersTableViewCell.swift */,
+				B380407A21D4164C002CEA52 /* SavedParametersDataManager.swift */,
+			);
+			path = SavedParameters;
+			sourceTree = "<group>";
+		};
+		B380406F21D3AE11002CEA52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B380406A21D39F31002CEA52 /* ParametersStorageModel.swift */,
+				B380407C21D417AF002CEA52 /* CoreDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B38A440F21A2D53B00DC146C /* CardParameters */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,14 +261,13 @@
 		B3BAEECE216F4E6600B7A4D7 /* Anastasiya */ = {
 			isa = PBXGroup;
 			children = (
-				B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */,
 				B38A440D21A2D53500DC146C /* ParametersProfile.swift */,
-				B33BF24121CE7CA80084414B /* Designable */,
-				B364A960219DBF86009F2BD0 /* Extensions */,
-				B33BF22A21CE7C2C0084414B /* Animation */,
-				B38A440F21A2D53B00DC146C /* CardParameters */,
-				B393827821CEC3B90022CA9A /* Graphs */,
+				B380406721D39E8C002CEA52 /* PresentationLayer */,
+				B380405B21D388C0002CEA52 /* ServiceLayer */,
+				B380405A21D3889E002CEA52 /* CoreLayer */,
 				B3BAEED9216F4E6800B7A4D7 /* Assets.xcassets */,
+				B380406121D38AD9002CEA52 /* RootAssembly.swift */,
+				B3BAEECF216F4E6600B7A4D7 /* AppDelegate.swift */,
 				B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */,
 				B3BAEEDB216F4E6800B7A4D7 /* LaunchScreen.storyboard */,
 				B3BAEEDE216F4E6800B7A4D7 /* Info.plist */,
@@ -288,24 +387,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B380406021D38A17002CEA52 /* CoreAssembly.swift in Sources */,
 				B33BF24021CE7C890084414B /* UIViewXRadialGradient.swift in Sources */,
 				B33BF23721CE7C890084414B /* UIViewAnchorPoint.swift in Sources */,
 				B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */,
+				B380406221D38AD9002CEA52 /* RootAssembly.swift in Sources */,
 				B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */,
 				B33BF23F21CE7C890084414B /* UISliderX.swift in Sources */,
 				B33BF23B21CE7C890084414B /* UIViewControllerX.swift in Sources */,
 				B33BF23C21CE7C890084414B /* UIImageViewX.swift in Sources */,
+				B380407721D411E4002CEA52 /* SaveParametersViewController.swift in Sources */,
+				B380407921D412CC002CEA52 /* ParametersTableViewCell.swift in Sources */,
+				B380405E21D389D5002CEA52 /* CoreDataService.swift in Sources */,
 				B393827721CEC16A0022CA9A /* GraphsViewController.swift in Sources */,
 				B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */,
 				B3BAEED8216F4E6600B7A4D7 /* Anastasiya.xcdatamodeld in Sources */,
 				B38A440E21A2D53500DC146C /* ParametersProfile.swift in Sources */,
 				B33BF23D21CE7C890084414B /* UIVisualEffectViewX.swift in Sources */,
+				B380406621D39086002CEA52 /* ServicesAssembly.swift in Sources */,
 				B33BF23921CE7C890084414B /* UIButtonX.swift in Sources */,
 				B3BAEED0216F4E6600B7A4D7 /* AppDelegate.swift in Sources */,
+				B380407D21D417AF002CEA52 /* CoreDataModel.swift in Sources */,
 				B33BF23A21CE7C890084414B /* UITextFieldX.swift in Sources */,
+				B380405621D383F1002CEA52 /* CoreDataStack.swift in Sources */,
+				B380405421D3836F002CEA52 /* ParametersExtension.swift in Sources */,
+				B380406921D39EAD002CEA52 /* PresentationAssembly.swift in Sources */,
 				B33BF23E21CE7C890084414B /* UILabelX.swift in Sources */,
+				B380406421D38BC2002CEA52 /* ParametersStorageManager.swift in Sources */,
 				B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */,
 				B33BF23821CE7C890084414B /* UIViewX.swift in Sources */,
+				B380407B21D4164C002CEA52 /* SavedParametersDataManager.swift in Sources */,
+				B380406B21D39F31002CEA52 /* ParametersStorageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1295,6 +1295,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="peu-8g-Ja6"/>
+                                                            <action selector="sendButtonPressed:" destination="HSy-qQ-F73" eventType="touchUpInside" id="82n-fZ-81P"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

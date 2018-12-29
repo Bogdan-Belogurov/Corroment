@@ -8,8 +8,9 @@
 
 import UIKit
 import Charts
+import MessageUI
 
-class GraphsViewController: UIViewController {
+class GraphsViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     
     @IBOutlet weak var firstLineChart: LineChartView!
@@ -99,6 +100,48 @@ class GraphsViewController: UIViewController {
         set.fill = Fill(linearGradient: gradient, angle: 90)
         set.drawFilledEnabled = true
         return set
+    }
+    
+    
+    
+    @IBAction func sendButtonPressed(_ sender: Any) {
+        let mailComposeViewController = configureMailController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            showMailError()
+        }
+    }
+    
+    private func configureMailController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        firstLineChart.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7034995719)
+        if let firstImage = firstLineChart.getChartImage(transparent: true)!.pngData() {
+            mailComposerVC.addAttachmentData(firstImage, mimeType: "image/png", fileName: "First")
+        }
+        secondLineChart.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.7034995719)
+        if let secondImage = secondLineChart.getChartImage(transparent: true)!.pngData() {
+            mailComposerVC.addAttachmentData(secondImage, mimeType: "image/png", fileName: "Second")
+        }
+        
+        mailComposerVC.setToRecipients(["belbog@me.com"])
+        mailComposerVC.setSubject("Hello")
+        mailComposerVC.setMessageBody("How are you doing?", isHTML: false)
+        firstLineChart.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        secondLineChart.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        return mailComposerVC
+    }
+    
+    private func showMailError() {
+        let sendMailErrorAlert = UIAlertController(title: "Could not send email", message: "Your device could not send email", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        sendMailErrorAlert.addAction(dismiss)
+        self.present(sendMailErrorAlert, animated: true, completion: nil)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveDataPresed(_ sender: Any) {

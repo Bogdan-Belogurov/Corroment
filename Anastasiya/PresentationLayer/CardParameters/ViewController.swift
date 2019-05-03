@@ -12,51 +12,53 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardView: UIViewX!
     @IBOutlet weak var sigmaOneTextField: UITextField!
-    @IBOutlet weak var sigmaTwoTextField: UITextField!
     @IBOutlet weak var taoOneTextField: UITextField!
-    @IBOutlet weak var taoTwoTextField: UITextField!
     @IBOutlet weak var calculateButton: UIButtonX!
     @IBOutlet weak var heightViewConstraint: NSLayoutConstraint!
+    var pointParameter: ParameterProfile?
     var formatter: NumberFormatter?
-    
+    lazy var parametersManager: ParametersManager = AppDelegate.rootAssembly.presentationAssembly.parametersManager
     @IBAction func textFieldAction(_ sender: Any) {
         checkCardInput()
     }
     
     @IBAction func calculateButtonPressed(_ sender: Any) {
-        print("push")
-        performSegue(withIdentifier: "toGraphs", sender: nil)
+        guard let point = self.pointParameter else {
+            return
+        }
+        parametersManager.appendParameter(with: point)
+        self.dismiss(animated: true, completion: nil)
     }
     
-    var cardToCalculate: ParametersProfile? {
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    var cardToCalculate: ParameterProfile? {
         
         guard let sigmaOne = sigmaOneTextField.text else {return nil}
-        guard let sigmaTwo = sigmaTwoTextField.text else {return nil}
         guard let taoOne = taoOneTextField.text else {return nil}
-        guard let taoTwo = taoTwoTextField.text else {return nil}
 
         
-        if sigmaOne.isEmpty || sigmaTwo.isEmpty || taoOne.isEmpty || taoTwo.isEmpty {
+        if sigmaOne.isEmpty || taoOne.isEmpty {
             return nil
         }
         
         guard let so = self.formatter?.number(from: sigmaOne)?.doubleValue else { return nil }
-        guard let st = self.formatter?.number(from: sigmaTwo)?.doubleValue else { return nil }
         guard let to = self.formatter?.number(from: taoOne)?.doubleValue else { return nil }
-        guard let tt = self.formatter?.number(from: taoTwo)?.doubleValue else { return nil }
         
-        return ParametersProfile(sigmaOne: so, sigmaTwo: st, taoOne: to, taoTwo: tt)
+        return ParameterProfile(time: to, sigma: so)
     }
     
     func checkCardInput() {
-        if cardToCalculate != nil {
-            if self.heightViewConstraint.constant != 336 {
+        self.pointParameter = cardToCalculate
+        if pointParameter != nil {
+            if self.heightViewConstraint.constant != 236 {
                 UIView.animate(withDuration: 0.2, delay: 0, options: [], animations: {
-                    self.heightViewConstraint.constant = 336
+                    self.heightViewConstraint.constant = 236
                     self.view.layoutIfNeeded()
                 }) { (success) in
                     if success {
-                        if self.heightViewConstraint.constant == 336 {
+                        if self.heightViewConstraint.constant == 236 {
                         UIView.animate(withDuration: 0.2) {
                             self.calculateButton.alpha = 1
                         }
@@ -65,13 +67,13 @@ class ViewController: UIViewController {
                 }
             }
         } else {
-            if self.heightViewConstraint.constant != 260 {
+            if self.heightViewConstraint.constant != 140 {
                 UIView.animate(withDuration: 0.2, delay: 0, options: [], animations: {
                     self.calculateButton.alpha = 0
                 }) { (success) in
                     if success {
                         UIView.animate(withDuration: 0.2) {
-                            self.heightViewConstraint.constant = 260
+                            self.heightViewConstraint.constant = 140
                             self.view.layoutIfNeeded()
                         }
                     }
@@ -90,17 +92,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        sigmaOneTextField.text = nil
-//        sigmaTwoTextField.text = nil
-//        taoOneTextField.text = nil
-//        taoTwoTextField.text = nil
+
         self.checkCardInput()
-        let userDefaults = UserDefaults.standard
-        let wasIntroWatched = userDefaults.bool(forKey: "wasIntroWatched")
-        guard !wasIntroWatched else {return}
-        if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "introAnimationViewController") as? IntroAnimationViewController {
-            present(pageViewController, animated: true, completion: nil)
-        }
         
     }
     
@@ -114,7 +107,6 @@ class ViewController: UIViewController {
         if segue.identifier == "toGraphs" {
             guard let dvc = segue.destination as? GraphsViewController else { return }
             guard let parametersToGraphs = cardToCalculate else {return}
-            dvc.parameters = parametersToGraphs
             dvc.saveIsHiden = false
         }
     }

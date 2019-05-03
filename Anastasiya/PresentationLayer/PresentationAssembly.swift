@@ -11,6 +11,7 @@ import Foundation
 protocol PresentationAssemblyProtocol {
     var parametsersStorageModel: ParametersStorageModelProtocol { get }
     var coreDataModel: CoreDataModelProtocol { get }
+    var parametersManager: ParametersManager { get }
 }
 
 class PresentationAssembly: PresentationAssemblyProtocol {
@@ -23,4 +24,6 @@ class PresentationAssembly: PresentationAssemblyProtocol {
      lazy var parametsersStorageModel: ParametersStorageModelProtocol = ParametersStorageModel(parametersStorageManeger: self.serviceAssembly.parametersStorageManager)
     
     lazy var coreDataModel: CoreDataModelProtocol = CoreDataModel(coreDataService: self.serviceAssembly.coreDataService)
+    
+    lazy var parametersManager: ParametersManager = ParametersManager()
 }

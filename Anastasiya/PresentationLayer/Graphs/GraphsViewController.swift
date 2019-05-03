@@ -16,7 +16,8 @@ class GraphsViewController: UIViewController, MFMailComposeViewControllerDelegat
     @IBOutlet weak var firstLineChart: LineChartView!
     @IBOutlet weak var secondLineChart: LineChartView!
     @IBOutlet weak var saveButton: UIButtonX!
-    
+    let timeStack: [Double] = [0, 2, 3, 4]
+    let sigmaStack: [Double] = [4, 6, 8, 10]
     var parameters: ParametersProfile?
     var saveIsHiden: Bool = false
     
@@ -31,10 +32,25 @@ class GraphsViewController: UIViewController, MFMailComposeViewControllerDelegat
         // Second Chart Lines
         self.setChartDesign(lineChart: self.secondLineChart)
         //
-        setDataCountFirstChart()
+        setDataCountFirstChart(self.timeStack.count)
         setDataCountSecondChart()
         self.saveButton.isHidden = saveIsHiden
 
+    }
+    func average(_ input: [Double]) -> Double {
+        return input.reduce(0, +) / Double(input.count)
+    }
+    
+    func multiply(_ a: [Double], _ b: [Double]) -> [Double] {
+        return zip(a, b).map(*)
+    }
+    
+    func linearRegression(_ xs: [Double], _ ys: [Double]) -> (Double) -> Double {
+        let sum1 = average(multiply(xs, ys)) - average(xs) * average(ys)
+        let sum2 = average(multiply(xs, xs)) - pow(average(xs), 2)
+        let slope = sum1 / sum2
+        let intercept = average(ys) - slope * average(xs)
+        return { x in intercept + slope * x }
     }
     
     private func setChartDesign(lineChart: LineChartView) {
@@ -45,17 +61,20 @@ class GraphsViewController: UIViewController, MFMailComposeViewControllerDelegat
         firstChartLeftAxis.labelTextColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
-    func setDataCountFirstChart(_ count: Int = 20) {
-        guard let parameter = self.parameters else { return }
-        let sigmaCritOne = ((parameter.sigmaTwo * parameter.taoTwo) - (parameter.sigmaOne * parameter.taoOne)) / (parameter.taoTwo - parameter.taoOne)
-        
+    func setDataCountFirstChart(_ count: Int) {
+        let tuples = Array(zip(self.timeStack, self.sigmaStack)).sorted(by: <)
+        print(tuples)
         let values = (0..<count).map { (i) -> ChartDataEntry in
-            let val = (parameter.sigmaOne - sigmaCritOne) * Double(i)
-            return ChartDataEntry(x: Double(i), y: val)
+            let val = self.linearRegression(self.timeStack, self.sigmaStack)(tuples[i].0)
+            return ChartDataEntry(x: tuples[i].0, y: val)
+        }
+        let pointValues = (0..<count).map { (i) -> ChartDataEntry in
+            return ChartDataEntry(x: tuples[i].0, y: tuples[i].1)
         }
         //Castomize chart
         let set1 = setDataSet(values: values, label: "Data set1")
-        let data1 = LineChartData(dataSet: set1)
+        let set2 = pointSetDataSet(values: pointValues, label: "Points")
+        let data1 = LineChartData(dataSets: [set1, set2])
         self.firstLineChart.legend.form = .line
         self.firstLineChart.rightAxis.enabled = false
         self.firstLineChart.data = data1
@@ -90,14 +109,22 @@ class GraphsViewController: UIViewController, MFMailComposeViewControllerDelegat
         set.setCircleColor(#colorLiteral(red: 0.7905326217, green: 0.311452509, blue: 0.3857892954, alpha: 1))
         set.lineWidth = 1
         set.circleRadius = 1
-        set.valueFont = .systemFont(ofSize: 10)
+        set.valueFont = .systemFont(ofSize: 0)
         set.valueColors = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
-        let gradientColors = [ChartColorTemplates.colorFromString("#00ff0000").cgColor,
-                              ChartColorTemplates.colorFromString("#ffff0000").cgColor]
-        let gradient = CGGradient(colorsSpace: nil, colors: gradientColors as CFArray, locations: nil)!
-        
-        set.fillAlpha = 1
-        set.fill = Fill(linearGradient: gradient, angle: 90)
+        set.fillAlpha = 0
+        set.drawFilledEnabled = true
+        return set
+    }
+    
+    private func pointSetDataSet(values: [ChartDataEntry], label: String) -> LineChartDataSet {
+        let set = LineChartDataSet(values: values, label: label)
+        set.setColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        set.setCircleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        set.lineWidth = 1
+        set.circleRadius = 5
+        set.valueFont = .systemFont(ofSize: 16)
+        set.valueColors = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
+        set.fillAlpha = 0
         set.drawFilledEnabled = true
         return set
     }

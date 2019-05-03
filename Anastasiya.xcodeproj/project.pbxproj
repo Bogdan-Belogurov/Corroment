@@ -18,6 +18,10 @@
 		B33BF23E21CE7C890084414B /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23421CE7C880084414B /* UILabelX.swift */; };
 		B33BF23F21CE7C890084414B /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23521CE7C880084414B /* UISliderX.swift */; };
 		B33BF24021CE7C890084414B /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33BF23621CE7C890084414B /* UIViewXRadialGradient.swift */; };
+		B3493018227C791C00F4CEEB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3493017227C791C00F4CEEB /* MainViewController.swift */; };
+		B349301C227C7B5000F4CEEB /* ParameterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349301A227C7B5000F4CEEB /* ParameterTableViewCell.swift */; };
+		B349301D227C7B5000F4CEEB /* ParameterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B349301B227C7B5000F4CEEB /* ParameterTableViewCell.xib */; };
+		B349301F227C7D0300F4CEEB /* ParameterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349301E227C7D0300F4CEEB /* ParameterManager.swift */; };
 		B364A95B219DB15E009F2BD0 /* IntroAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */; };
 		B364A95D219DB789009F2BD0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B364A95C219DB789009F2BD0 /* GradientView.swift */; };
 		B364A964219DD4A5009F2BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BAEED3216F4E6600B7A4D7 /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 		B33BF23421CE7C880084414B /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		B33BF23521CE7C880084414B /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
 		B33BF23621CE7C890084414B /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		B3493017227C791C00F4CEEB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B349301A227C7B5000F4CEEB /* ParameterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterTableViewCell.swift; sourceTree = "<group>"; };
+		B349301B227C7B5000F4CEEB /* ParameterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParameterTableViewCell.xib; sourceTree = "<group>"; };
+		B349301E227C7D0300F4CEEB /* ParameterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterManager.swift; sourceTree = "<group>"; };
 		B364A95A219DB15E009F2BD0 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
 		B364A95C219DB789009F2BD0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B364A965219DEE2A009F2BD0 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -69,8 +77,6 @@
 		B380406521D39086002CEA52 /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
 		B380406821D39EAD002CEA52 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
 		B380406A21D39F31002CEA52 /* ParametersStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersStorageModel.swift; sourceTree = "<group>"; };
-		B380407021D3AE3F002CEA52 /* SavedParametersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedParametersCollectionViewController.swift; sourceTree = "<group>"; };
-		B380407221D3AFBC002CEA52 /* ParametersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersCollectionViewCell.swift; sourceTree = "<group>"; };
 		B380407621D411E4002CEA52 /* SaveParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveParametersViewController.swift; sourceTree = "<group>"; };
 		B380407821D412CC002CEA52 /* ParametersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersTableViewCell.swift; sourceTree = "<group>"; };
 		B380407A21D4164C002CEA52 /* SavedParametersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedParametersDataManager.swift; sourceTree = "<group>"; };
@@ -142,6 +148,16 @@
 			path = Designable;
 			sourceTree = "<group>";
 		};
+		B3493019227C792300F4CEEB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B3493017227C791C00F4CEEB /* MainViewController.swift */,
+				B349301A227C7B5000F4CEEB /* ParameterTableViewCell.swift */,
+				B349301B227C7B5000F4CEEB /* ParameterTableViewCell.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		B364A960219DBF86009F2BD0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +211,7 @@
 				B364A960219DBF86009F2BD0 /* Extensions */,
 				B33BF22A21CE7C2C0084414B /* Animation */,
 				B38A440F21A2D53B00DC146C /* CardParameters */,
+				B3493019227C792300F4CEEB /* MainView */,
 				B393827821CEC3B90022CA9A /* Graphs */,
 				B380406E21D3ADE7002CEA52 /* SavedParameters */,
 				B380406F21D3AE11002CEA52 /* Models */,
@@ -205,8 +222,6 @@
 		B380406E21D3ADE7002CEA52 /* SavedParameters */ = {
 			isa = PBXGroup;
 			children = (
-				B380407021D3AE3F002CEA52 /* SavedParametersCollectionViewController.swift */,
-				B380407221D3AFBC002CEA52 /* ParametersCollectionViewCell.swift */,
 				B380407621D411E4002CEA52 /* SaveParametersViewController.swift */,
 				B380407821D412CC002CEA52 /* ParametersTableViewCell.swift */,
 				B380407A21D4164C002CEA52 /* SavedParametersDataManager.swift */,
@@ -219,6 +234,7 @@
 			children = (
 				B380406A21D39F31002CEA52 /* ParametersStorageModel.swift */,
 				B380407C21D417AF002CEA52 /* CoreDataModel.swift */,
+				B349301E227C7D0300F4CEEB /* ParameterManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +334,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = B3BAEEC3216F4E6600B7A4D7;
@@ -338,6 +355,7 @@
 				B364A964219DD4A5009F2BD0 /* Main.storyboard in Resources */,
 				B3BAEEDD216F4E6800B7A4D7 /* LaunchScreen.storyboard in Resources */,
 				B3BAEEDA216F4E6800B7A4D7 /* Assets.xcassets in Resources */,
+				B349301D227C7B5000F4CEEB /* ParameterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +412,7 @@
 				B380406221D38AD9002CEA52 /* RootAssembly.swift in Sources */,
 				B3BAEED2216F4E6600B7A4D7 /* ViewController.swift in Sources */,
 				B33BF23F21CE7C890084414B /* UISliderX.swift in Sources */,
+				B349301C227C7B5000F4CEEB /* ParameterTableViewCell.swift in Sources */,
 				B33BF23B21CE7C890084414B /* UIViewControllerX.swift in Sources */,
 				B33BF23C21CE7C890084414B /* UIImageViewX.swift in Sources */,
 				B380407721D411E4002CEA52 /* SaveParametersViewController.swift in Sources */,
@@ -410,12 +429,14 @@
 				B380407D21D417AF002CEA52 /* CoreDataModel.swift in Sources */,
 				B33BF23A21CE7C890084414B /* UITextFieldX.swift in Sources */,
 				B380405621D383F1002CEA52 /* CoreDataStack.swift in Sources */,
+				B3493018227C791C00F4CEEB /* MainViewController.swift in Sources */,
 				B380405421D3836F002CEA52 /* ParametersExtension.swift in Sources */,
 				B380406921D39EAD002CEA52 /* PresentationAssembly.swift in Sources */,
 				B33BF23E21CE7C890084414B /* UILabelX.swift in Sources */,
 				B380406421D38BC2002CEA52 /* ParametersStorageManager.swift in Sources */,
 				B364A966219DEE2A009F2BD0 /* DesignableButton.swift in Sources */,
 				B33BF23821CE7C890084414B /* UIViewX.swift in Sources */,
+				B349301F227C7D0300F4CEEB /* ParameterManager.swift in Sources */,
 				B380407B21D4164C002CEA52 /* SavedParametersDataManager.swift in Sources */,
 				B380406B21D39F31002CEA52 /* ParametersStorageModel.swift in Sources */,
 			);

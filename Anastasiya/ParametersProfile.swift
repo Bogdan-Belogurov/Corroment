@@ -25,3 +25,15 @@ class ParametersProfile {
         self.taoTwo = taoTwo
     }
 }
+
+class ParameterProfile {
+    
+    var sigma: Double
+    var time: Double
+    
+    
+    init(time: Double, sigma: Double) {
+        self.time = time
+        self.sigma = sigma
+    }
+}
